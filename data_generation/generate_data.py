@@ -25,7 +25,7 @@ with open('movies1.csv', 'w') as f:
                 f'{i},' # id
                 f'{random_name(20)},' # name
                 f'{random.randint(0, DIRECTOR-1)},' # Director
-                f'{random.randint(1,29)}-{random.randint(1,12)}-{random.randint(2000,2005)},' # releaseDate
+                f'{str(random.randint(2000,2005)).zfill(4)}-{str(random.randint(1,12)).zfill(2)}-{str(random.randint(1,28)).zfill(2)},' # releaseDate
                 f'{random.randint(0,CATEGORY-1)},' # Category
                 f'{random.randint(60,200)},' # length
                 f'{random.randint(1000000,20000000)},' # budget
@@ -42,7 +42,7 @@ with open('movies2.csv', 'w') as f:
                 f'{i},' # id
                 f'{random_name(20)},' # name
                 f'{random.randint(0, DIRECTOR-1)},' # Director
-                f'{random.randint(1,29)}-{random.randint(1,12)}-{random.randint(2000,2005)},' # releaseDate
+                f'{str(random.randint(2000,2005)).zfill(4)}-{str(random.randint(1,12)).zfill(2)}-{str(random.randint(1,28)).zfill(2)},' # releaseDate
                 f'{random.randint(0,CATEGORY-1)},' # Category
                 f'{random.randint(60,200)},' # length
                 f'{random.randint(1000000,20000000)},' # budget
@@ -59,7 +59,7 @@ with open('movies3.csv', 'w') as f:
                 f'{i},' # id
                 f'{random_name(20)},' # name
                 f'{random.randint(0, DIRECTOR-1)},' # Director
-                f'{random.randint(1,29)}-{random.randint(1,12)}-{random.randint(2000,2005)},' # releaseDate
+                f'{str(random.randint(2000,2005)).zfill(4)}-{str(random.randint(1,12)).zfill(2)}-{str(random.randint(1,28)).zfill(2)},' # releaseDate
                 f'{random.randint(0,CATEGORY-1)},' # Category
                 f'{random.randint(60,200)},' # length
                 f'{random.randint(1000000,20000000)},' # budget
@@ -114,7 +114,7 @@ with open('directors.csv', 'w') as f:
                 f'{i},' # id
                 f'{random_name(20)},' # firstName
                 f'{random_name(20)},' # lastName
-                f'{random.randint(1,29)}-{random.randint(1,12)}-{random.randint(2000,2005)}\n' # birthDate
+                f'{str(random.randint(1980,1995)).zfill(4)}-{str(random.randint(1,12)).zfill(2)}-{str(random.randint(1,28)).zfill(2)}\n' # birthDate
         )
 
 with open('actors.csv', 'w') as f:
@@ -124,5 +124,5 @@ with open('actors.csv', 'w') as f:
                 f'{i},' # id
                 f'{random_name(20)},' # firstName
                 f'{random_name(20)},' # lastName
-                f'{random.randint(1,29)}-{random.randint(1,12)}-{random.randint(2000,2005)}\n' # birthDate
+                f'{str(random.randint(1980,1995)).zfill(4)}-{str(random.randint(1,12)).zfill(2)}-{str(random.randint(1,28)).zfill(2)}\n' # birthDate
         )
