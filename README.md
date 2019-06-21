@@ -36,7 +36,17 @@ Obie bazy danych zostały uruchomione na systemie Ubuntu 18.04 jako kontenery do
   Uruchomienie:
 
   `mongo localhost/sbdlab4_mongo`
-
+  
+  **Narzędzie do pobierania danych z plików csv w mogodb (instalacja):**
+  
+  `sudo apt install mongo-tools`
+  
+  **Wczytywanie danych z pliku csv (przykład):**
+  
+  `mongoimport -d sbdlab4_mongo -c actors --type csv --file actors.csv --headerline`
+  
+  Dane sa zapisane w kontenerze o nazwie sbdlab4_mongo jako "actors". Źródło danych to "actors.csv".
+  
   **Pobranie klienta do obsługi MS SQL:**
 
   Baza danych MS SQL jest obsługiwana za pomocą DBever. https://dbeaver.io/
