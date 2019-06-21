@@ -28,6 +28,7 @@ Obie bazy danych zostały uruchomione na systemie Ubuntu 18.04 jako kontenery do
   User (domyślny) "sa" hasło "Pp1234567!"
 
   **Klient do obsługi mongodb**:
+  
   Instalacja:
 
   `sudo apt-get install mongodb-clients`
