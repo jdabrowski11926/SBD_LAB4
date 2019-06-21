@@ -41,7 +41,7 @@ Obie bazy danych zostały uruchomione na systemie Ubuntu 18.04 jako kontenery do
   Baza danych MS SQL jest obsługiwana za pomocą DBever. https://dbeaver.io/
 
 ## Usunięcie bazy danych:
-  **Zatrzymanie kontenera sbdlab4_mongo:**sudo docker volume prune
+  **Zatrzymanie kontenera sbdlab4_mongo:**
 
   `sudo docker stop sbdlab4_mongo`
 
